@@ -1,5 +1,5 @@
 data = {
-    "name": "Asap dasty",
+    "name": "Asap dasty", #string
     "age": 30,  # int
     "is_active": True,  # bool
     "grades": [85, 90, 88],  # list
