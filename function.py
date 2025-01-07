@@ -1,23 +1,22 @@
 import random
 
+def sum(x,y):
+    return float(x) + float(y)
 
-# def sum(x,y):
-#     return float(x) + float(y)
-#
-# print(f"sum: {sum(2,9)}")
-#
-# dictionary = {
-#     "name": "Asap",
-#     "age":20,
-#     "summary": random.choices(["developer", "designer", "engineer", "tester"], k=1)[0]
-# }
-# #iterate over and display the various key => value
-#
-# def dictionary_key_value(dic):
-#     for key, value in dic.items():
-#         print(f"{key} => {value}")
-#
-# dictionary_key_value(dictionary)
+print(f"sum: {sum(2,9)}")
+
+dictionary = {
+    "name": "Asap",
+    "age":20,
+    "summary": random.choices(["developer", "designer", "engineer", "tester"], k=1)[0]
+}
+#iterate over and display the various key => value
+
+def dictionary_key_value(dic):
+    for key, value in dic.items():
+        print(f"{key} => {value}")
+
+dictionary_key_value(dictionary)
 
 def replace_last_name(last_nam):
     full_name = "Asap Dasty"
