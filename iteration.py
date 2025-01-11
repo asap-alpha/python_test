@@ -1,3 +1,6 @@
+name = "asap dasty"
+const = {"©", "¥", "é", "@", "→"}
+print(ascii(const))
 
 for i in range(5):
     if(i > 3):
