@@ -38,8 +38,42 @@ def interest(amount,*,rate, point):
     print("amount: {} rate: {} result: {} point: {}".format(amount, rate, result, point))
 
 
-interest(100,rate=30, point= 10)
+# interest(100,rate=30, point= 10)
+
+def addition(x: int, y: str):
+    result = x + int(y)
+    print("x -> {} y -> {} result -> {}".format(x,y,result))
+
+# addition(2, "1")
+
+# keyword-only and some positional-only arguments
+def check_result(x,/,y,*,constant):
+    result =y - x + constant
+    print("x -> {} y -> {} result -> {}".format(x,y,result))
 
 
+# check_result(20, y =20, constant =1)
 
 
+#arbitrary functions *args(positional arguments)
+def random_arg(*rand):
+    result = 0
+    for v in rand:
+        result = v + result
+    return result
+
+
+result = random_arg(10,23,11,45,20)
+# print("{}".format(result))
+
+
+# **kwargs(keyword arguments)
+def random_kwargs(**kwargs):
+    #details = {}
+    details = []
+    for k,v in kwargs.items():
+        details.append((k,v))
+    return details
+
+kwargs_result = random_kwargs(name = "Asap", age = 12, homeTown = "Ksi", country = "Ghana")
+print("{}".format(kwargs_result))
