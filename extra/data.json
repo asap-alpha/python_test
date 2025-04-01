@@ -1,0 +1,9 @@
+{
+    "to": "abdallahmustapha@hubtel.com",
+    "callbackUrl": "https://webhook.site/3c160668-874b-4f86-8a38-a9f953874c71",
+    "channel": "email",
+    "from": "asap",
+    "clientReference": "45443532324545464646",
+    "content": "we are testing",
+    "dlr": "rejected"
+}
