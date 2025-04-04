@@ -4,15 +4,17 @@ import time
 
 def random_numbers(numbers):
     for number in numbers:
-        print(number)
+        print("we're starting")
+        time.sleep(2)
+        print("we're ending here!")
 
 
-if __name__ == "__main__":
-    print("we're starting")
-    t = thread.Thread(target= random_numbers, args = (range(1000),))
-    t.start()
-    time.sleep(2)
-    t.join()
-    print("we're ending here!")
-    print(t.name)
+
+t = thread.Thread(target=random_numbers, args=(range(10),))
+
+t.start()
+
+# t.join()
+
+print(f"total thread {thread.active_count()}")
 
